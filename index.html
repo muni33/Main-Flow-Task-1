@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background-image: url("meta.jpg");
+            background-repeat: no-repeat;
+            background-position: fixed;
+            background-size: cover;
+            margin: 0%;
+            padding: 0%;
+            
+        }
+        .Metaverse{
+            color:white;
+            font-size:  50px;
+
+        }
+        li a{
+           color: aqua; 
+           padding:8px 16px ;
+           text-decoration: none;
+           display: block;
+           margin-right: 20px; 
+        }   
+
+        nav{ 
+            background-color: black;
+            background-size: cover;
+            }
+         ul{
+            float: right;
+            font-size: medium;
+            display: flex;
+            margin-right: 20px;
+            list-style-type: none;
+        }
+        li a:hover{
+            background-color: rgb(81, 75, 75);
+        }
+        .active{
+            background-color: darkblue;
+
+        }
+        h1{
+            float:right;
+            color:yellow;
+            margin: 20px 5px 40px 50px;
+            
+        }
+        
+        .form-container {
+            background-color: #c84098;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+           
+            align-content: center;
+            
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #1bb720;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .courses{
+            text-align: right;
+            color:#11c544;
+            
+            
+        }
+
+          </style>
+</head>
+<body>
+    <nav>
+        <label class="Metaverse">Metaverse</label>
+        <ul>
+            <li class="active"><a  href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <h1> Are you searching for new courses  <br><center> Enroll for new courses</center></h1>
+
+    <div class="form-container">
+        <h2>Course Enrollment Form</h2>
+        <form action="submit_form.html" method="post">
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">--Select a course--</option>
+                    <option value="course1">Course 1</option>
+                    <option value="course2">Course 2</option>
+                    <option value="course3">Course 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enroll">
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>
